@@ -1,3 +1,5 @@
+***This message shows that the files within Kidd's repository have been copied over to THIS repository.***
+
 
 The purpose of this repository is to 
 
