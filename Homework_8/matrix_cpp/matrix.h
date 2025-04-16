@@ -21,7 +21,7 @@ class Matrix {
     // helper matrix calculation functions
     Matrix scalarMultiply(int scalar) const;
     Matrix transpose() const;
-    Matrix multiply(const Matrix &other);
+    Matrix multiply(const Matrix &other) const;
     Matrix add(const Matrix &other);
 
     // basic print function
