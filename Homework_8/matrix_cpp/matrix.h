@@ -22,7 +22,7 @@ class Matrix {
     Matrix scalarMultiply(int scalar) const;
     Matrix transpose() const;
     Matrix multiply(const Matrix &other) const;
-    Matrix add(const Matrix &other);
+    Matrix add(const Matrix &other) const;
 
     // basic print function
     void print() const;
