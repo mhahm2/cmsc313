@@ -50,6 +50,6 @@ void print(int rows, int cols, int matrix[rows][cols]) {
         for (int j = 0; j < cols; ++j) {
             printf("%d ", matrix[i][j]);
         }
-        printf("\n")
+        printf("\n");
     }
 }
