@@ -12,6 +12,6 @@ void multiply_matrices(int r1, int c1, int mat1[r1][c1],
 void add_matrices(int rows, int cols, int mat1[rows][cols],
     int mat2[rows][cols], 
     int result[rows][cols]);
-void print(int rows, int cols, int matrix[rows][cols]);
+void print_matrix(int rows, int cols, int matrix[rows][cols]);
 
 #endif
