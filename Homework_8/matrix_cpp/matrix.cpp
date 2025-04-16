@@ -20,7 +20,7 @@ Matrix::Matrix(const vector<vector<int>> &values) {
 Matrix Matrix::scalarMultiply(int scalar) const {
     Matrix result(rows, cols);
     for(int i = 0; i < rows; ++i) {
-        for (int j = 0; j < cols; j++) {
+        for (int j = 0; j < cols; ++j) {
             // multiply the matrix by the scalar
             result.data[i][j] = data[i][j] * scalar;
         }
