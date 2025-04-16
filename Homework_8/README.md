@@ -17,7 +17,9 @@ matrix_c
 
 Build Instructions:
 Simply type and compile manually
+
 matrix_cpp: "g++ -g -o matrix_cpp main.cpp matrix.cpp" --> "./matrix_cpp"
+
 matrix_c: "gcc -std=c99 -o matrix_c main.c matrix.c" --> "./matrix.c"
 
 Testing Methodology:
