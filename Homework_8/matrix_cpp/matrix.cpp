@@ -75,3 +75,13 @@ Matrix Matrix::add(const Matrix &other) const {
     }
     return result;
 }
+
+// print
+void Matrix::print() const {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            cout << data[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
