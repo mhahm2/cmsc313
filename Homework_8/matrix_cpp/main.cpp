@@ -26,7 +26,7 @@ int main() {
     Matrix D = A.add(product);
 
     // print results (using print function)
-    cout << "Final result of D:" << endl;
+    cout << "Final result of D (in CPP):" << endl;
     D.print();
 
     return 0;
