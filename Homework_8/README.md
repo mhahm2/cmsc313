@@ -27,4 +27,4 @@ screenshot and instructions of homework)
 
 Additional Information:
 - If you are compiling and running the C implementation of my code locally, for some reason, Windows flags it as a security risk (I suspect this might have to do with the most recent Windows update)
-- If this happens, simply turn off real-time protection under the "Virus & threat protection settings" in Windows, and recompile and run the code
+- If this happens, simply turn off real-time protection under the "Virus & threat protection settings" in Windows, and recompile and run the code (and turn real-time protection back on once you are done)
