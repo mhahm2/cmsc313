@@ -38,3 +38,14 @@ Matrix Matrix::transpose() const {
         }
     }
 }
+
+// multiply
+Matrix Matrix::multiply(const Matrix &other) const {
+    // invalid multiplication conditional
+    if (cols != other.rows) {
+        throw invalid_argument("Dimension multiplication mismatch.");
+    }
+
+    // for-loop (handle the matrix multiplication logic)
+    
+}
