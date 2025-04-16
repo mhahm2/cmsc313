@@ -46,6 +46,15 @@ Matrix Matrix::multiply(const Matrix &other) const {
         throw invalid_argument("Dimension multiplication mismatch.");
     }
 
+    Matrix result(rows, other.cols);
     // for-loop (handle the matrix multiplication logic)
-    
+    for (int i = 0; i < rows; ++i) {
+        // this specific for-loop handles VALUES within col
+        for (int j = 0; j < other.cols; ++j) {
+            for (int k = 0; k < cols; ++k) {
+                result.data[i][j] += data[i][k] & other.data[k][j];
+            }
+        }
+    }
+    return result;
 }
