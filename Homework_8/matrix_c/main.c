@@ -32,7 +32,7 @@ int main() {
     add_matrices(2, 2, A, product, D);
 
     // print out the resulting matrix D
-    printf("Final result of D (in C99):");
+    printf("Final result of D (in C99):\n");
     print_matrix(2, 2, D);
 
     return 0;

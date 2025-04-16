@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "matrix.h"
 
-void scalar_multiply(int rows, int cols, int matrix[rows][cols], int scalar) {
+void scalar_multiply(int rows, int cols, int matrix[rows][cols], 
+    int scalar) {
     // for-loop to handle the scalar multiplication logic 
     for (int i = 0; i < rows; ++i) {
         for (int j = 0; j < cols; ++j) {
@@ -10,7 +11,8 @@ void scalar_multiply(int rows, int cols, int matrix[rows][cols], int scalar) {
     }
 }
 
-void transpose(int rows, int cols, int matrix[rows][cols], int result[cols][rows]) {
+void transpose(int rows, int cols, int matrix[rows][cols], 
+    int result[cols][rows]) {
     // for-loop to handle the transposition logic
     for (int i = 0; i < rows; ++i) {
         for (int j = 0; j < cols; ++j) {
@@ -20,7 +22,8 @@ void transpose(int rows, int cols, int matrix[rows][cols], int result[cols][rows
     
 }
 
-void multiply_matrices(int r1, int c1, int mat1[r1][c1], int r2, int c2, int mat2[r2][c2], int result[r1][c2]) {
+void multiply_matrices(int r1, int c1, int mat1[r1][c1], 
+    int r2, int c2, int mat2[r2][c2], int result[r1][c2]) {
     // for-loop to handle the matrix multiplication logic
     for (int i = 0; i < r1; ++i) {
         for (int j = 0; j < c2; ++j) {
@@ -32,7 +35,8 @@ void multiply_matrices(int r1, int c1, int mat1[r1][c1], int r2, int c2, int mat
     }
 }
 
-void add_matrices(int rows, int cols, int mat1[rows][cols], int mat2[rows][cols], int result[rows][cols]) {
+void add_matrices(int rows, int cols, int mat1[rows][cols], 
+    int mat2[rows][cols], int result[rows][cols]) {
     // for-loop to hand matrix addition logic
     for (int i = 0; i < rows; ++i) {
         for (int j = 0; j < cols; ++j) {
