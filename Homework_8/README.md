@@ -4,6 +4,7 @@ Pupose of Software: The Purpose of this software is to implement
 and calculate matrix functions.
 
 Files:
+
 matrix_cpp
 - matrix.h (header file that contains our Matrix class in C++)
 - matrix.cpp (file that contains the matrix functionality)
