@@ -53,7 +53,7 @@ Matrix Matrix::multiply(const Matrix &other) const {
         // this specific for-loop handles VALUES within col
         for (int j = 0; j < other.cols; j++) {
             for (int k = 0; k < cols; ++k) {
-                result.data[i][j] += data[i][k] & other.data[k][j];
+                result.data[i][j] += data[i][k] * other.data[k][j];
             }
         }
     }
