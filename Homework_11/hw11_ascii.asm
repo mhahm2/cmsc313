@@ -36,3 +36,10 @@ translate_loop:
     inc edi
     pop ax  ; restore the original AL
 
+    ; convert 3 bits of the byte to the ASCII hex character (translate low nibble)
+    and al, 0x0F
+    call nibble_to_ascii    ; calls nibble_to_ascii subroutine (EXTRA CREDIT)
+    mov [edi], al
+    inc edi
+
+    
