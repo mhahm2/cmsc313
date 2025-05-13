@@ -13,3 +13,13 @@ inputLen equ 8  ; number of bytes in inputBuf
 
 SECTION .bss
 outputBuf: resb 80  ; output buffer for the translated data
+
+SECTION .text
+global _start
+
+_start:
+    mov esi, inputBuf   ; ESI source pointer for inputBuf
+    mov edi, outputBuf  ; EDI destination pointer for the outputBuf
+
+    mov ecx, inputLen   ; ecx used for loop counter for inputBuf
+
