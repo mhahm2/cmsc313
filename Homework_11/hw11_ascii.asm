@@ -60,4 +60,16 @@ add_space:
     inc edi
     jmp translate_loop  ; afterwards, jump back to loop for next ASCII output
 
+done:
+    ; syscall to write the stdout, outputBuf, and length
+    mov eax, 4  ; syscall number 4 (syswrite)
+    mov ebx, 1  ; file descriptor 1 (stdout)
+    mov ecx, outputBuf
+    mov edx, edi
+    sub edx, outputBuf
+    int 0x80    ; perform the syscall
 
+    ; syscall to exit(0)
+    mov eax, 1
+    xor ebx, ebx
+    int 0x80    ; perform syscall
