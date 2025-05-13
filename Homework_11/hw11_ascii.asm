@@ -73,3 +73,14 @@ done:
     mov eax, 1
     xor ebx, ebx
     int 0x80    ; perform syscall
+
+; EXTRA CREDIT: nibble_to_ascii subroutine
+nibble_to_ascii:
+    cmp al, 9   ; compare AL to digits 0-9
+    jbe .digit
+    add al, 0x37    ; converts values to ASCII characters A-F
+    ret     ; return from the subroutine
+
+.digit:
+    add al, 0x30    ; converts values to ASCII 0-9
+    ret     ; return from subroutine
