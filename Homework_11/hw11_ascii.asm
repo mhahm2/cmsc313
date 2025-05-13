@@ -42,4 +42,22 @@ translate_loop:
     mov [edi], al
     inc edi
 
-    
+    ; add space/newline (as instructed for output from assignment instructions)
+    dec ecx
+    cmp ecx, 0
+    jne add_space   ; call add_space subroutine to space out ASCII outputs
+
+    ; add newlines (as instructed for output from assignment instructions)
+    mov byte [edi], 0x0A    ; first newline
+    inc edi
+    mov byte [edi], 0x0A    ; second newline (completely blank)
+    inc edi
+    jmp done
+
+; add_space subroutine
+add_space:
+    mov byte [edi], ' ' ; space out the ASCII outputs (match assignment sample output)
+    inc edi
+    jmp translate_loop  ; afterwards, jump back to loop for next ASCII output
+
+
