@@ -23,3 +23,16 @@ _start:
 
     mov ecx, inputLen   ; ecx used for loop counter for inputBuf
 
+translate_loop:
+    lodsb   ; load next byte from ESI into AL (low byte)
+
+    ; convert 4 bits of the byte to ASCII hex character (translate high nibble)
+    mov ah, al
+    shr ah, 4
+    push ax     ; save the full AL
+    mov al, ah
+    call nibble_to_ascii    ; calls nibble_to_ascii subroutine (EXTRA CREDIT)
+    mov [edi], al
+    inc edi
+    pop ax  ; restore the original AL
+
