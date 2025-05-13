@@ -10,3 +10,6 @@
 SECTION .data
 inputBuf: db 0x83, 0x6A, 0x88, 0xDE, 0x9A, 0xC3, 0x54, 0x9A
 inputLen equ 8  ; number of bytes in inputBuf
+
+SECTION .bss
+outputBuf: resb 80  ; output buffer for the translated data
