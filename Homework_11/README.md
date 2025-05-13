@@ -1,5 +1,9 @@
 Homework 11 - NASM Ascii Hex translator
 
+Name: Michael Hahm
+Date: 5/12/2025
+Course: CMSC 313
+
 Description: This program is meant to read bytes from a buffer, convert them into ASCII hex, and print out the results.
 
 Compilation:
